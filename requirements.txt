@@ -11,5 +11,6 @@ langchain
 langchain_core
 langchain_google_genai
 ffmpeg-python
+git+https://github.com/openai/whisper.git
 
 
