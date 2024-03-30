@@ -10,7 +10,12 @@ from prompts import prompt_0,prompt_1
 import os
 import requests
 import httpx
+import whisper
 import whisperx
+import torchaudio
+import torch
+import tempfile
+from tempfile import NamedTemporaryFile
 
 #import logging, verboselogs
 
@@ -30,8 +35,10 @@ DEEPGRAM_API_KEY = os.getenv("DEEPGRAM_API_KEY")
 #iCreating a deepgram client
 deepgram: DeepgramClient = DeepgramClient(DEEPGRAM_API_KEY)
 
-# Load the WhisperX model
-
+# Load the Whisper model
+# Checking if NVIDIA GPU is available
+torch.cuda.is_available()
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 # Configure the API key
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
@@ -74,14 +81,18 @@ def main():
                 if mode == 'Master':
                     #getting the transcript using Deepgram
                     transcript = transcribe_audio_file_dpg(audio_file)
-                    #Getting the sentiments from the LLM
-                    sentiment = generate_sentiment(transcript)
-                    st.success("Done")
+                    
                 elif mode == "GrandMaster":
-                    transcript = transcribe_audio_file_wsp(audio_file)
-                    st.success("Done")
+                    
+                    # Getting the transcript using Whisper Model.
+                    transcript = transcribe_audio_file_wsp(audio_file.name)
+                    
+                    st.write("done transcribing")
+                #Getting the sentiments from the LLM
+                sentiment = generate_sentiment(transcript)   
+                st.success("Done")
                 st.markdown(transcript)
-                #st.markdown(sentiment)
+                st.markdown(sentiment)
             except Exception as e:
                 st.write(e)
 
@@ -118,25 +129,22 @@ def transcribe_audio_file_dpg(audio_file):
 
 #Function to generate transcript using Whisper X
 def transcribe_audio_file_wsp(audio_file):
-    #Specify the path to your local audio file
-    # = "path/to/your/audio/file.wav"
-    model = whisperx.load_model("MODELS")
+    print("Entered model zone")
+    #model = whisperx.load_model("base",device=DEVICE)
+    model = whisper.load_model("base",device = DEVICE)
+
+    print("Model loaded...starting to transcribe now")
 
     # Transcribe the audio file with speaker diarization
-    result = model.transcribe(audio_file, language="en", task="transcribe,diarize")
+    #result = model.transcribe(audio_file, fp16=False,language="en", task="transcribe,diarize")
+    result = model.transcribe(audio_file)
+    print("completed transcription..starting to print now")
 
     # Print the transcription
     print(result["text"])
 
     # Print the speaker information
-    for segment in result["segments"]:
-        speaker = segment["speaker"]
-        start = segment["start"]
-        end = segment["end"]
-        text = segment["text"]
-        print(f"Speaker {speaker} ({start:.2f} - {end:.2f}): {text}")
-
-    return result
+    return result["text"]
 
 #generating sentiment
 def generate_sentiment(transcript):
