@@ -11,11 +11,11 @@ import os
 import requests
 import httpx
 import whisper
-import whisperx
-import torchaudio
-import torch
-import tempfile
-from tempfile import NamedTemporaryFile
+#import whisperx
+#import torchaudio
+#import torch
+#import tempfile
+#from tempfile import NamedTemporaryFile
 
 #import logging, verboselogs
 
