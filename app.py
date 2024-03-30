@@ -13,7 +13,7 @@ import httpx
 import whisper
 #import whisperx
 #import torchaudio
-#import torch
+import torch
 #import tempfile
 #from tempfile import NamedTemporaryFile
 
