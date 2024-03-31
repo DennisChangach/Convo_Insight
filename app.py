@@ -9,14 +9,10 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from prompts import prompt_0,gd_prompt_0,prompt_1
 import os
-import requests
 import httpx
 import whisper
 import torch
 from tempfile import NamedTemporaryFile
-
-#import logging, verboselogs
-
 from deepgram import (
     DeepgramClient,
     DeepgramClientOptions,
@@ -109,6 +105,7 @@ def main():
                 #st.markdown(transcript)
                 st.markdown(sentiment)
             except Exception as e:
+                #Error handling
                 st.error(f"An error occurred: {type(e).__name__}: {str(e)}")
 
     #if user hasn't uploaded audio file
@@ -149,21 +146,16 @@ def transcribe_audio_file_dpg(audio_file):
 
 #Function to generate transcript using Whisper X
 def transcribe_audio_file_wsp(audio_file):
-    print("Entered model zone")
-    #model = whisperx.load_model("base",device=DEVICE)
+    #Loading whisper model
     model = whisper.load_model("base",device = DEVICE)
 
-    print("Model loaded...starting to transcribe now")
-
-    # Transcribe the audio file with speaker diarization
-    #result = model.transcribe(audio_file,language="en", task="transcribe,diarize")
+    #audio transcription
     result = model.transcribe(audio_file,fp16=False)
-    print("completed transcription..starting to print now")
 
     # Print the transcription
-    print(result["text"])
+    #print(result["text"])
 
-    # Print the speaker information
+    # return speaker information
     return result["text"]
 
 #generating sentiment
