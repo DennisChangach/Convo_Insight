@@ -14,7 +14,6 @@ import whisper
 #import whisperx
 #import torchaudio
 import torch
-import ffmpeg
 #import tempfile
 #from tempfile import NamedTemporaryFile
 
@@ -44,8 +43,6 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 # Configure the API key
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-# Set the FFmpeg path
-ffmpeg.configure(ffmpeg_bin=os.path.join(os.path.dirname(ffmpeg.__file__), 'ffmpeg'))
 
 #Configuring Langsmith
 #os.environ["LANGCHAIN_TRACING_V2"] = "true"
