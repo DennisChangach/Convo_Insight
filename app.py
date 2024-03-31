@@ -15,7 +15,7 @@ import whisper
 #import torchaudio
 import torch
 #import tempfile
-#from tempfile import NamedTemporaryFile
+from tempfile import NamedTemporaryFile
 
 #import logging, verboselogs
 
@@ -84,9 +84,14 @@ def main():
                     transcript = transcribe_audio_file_dpg(audio_file)
                     
                 elif mode == "GrandMaster":
-                    
+                    with NamedTemporaryFile(delete=False) as temp:
+                        # Write the user's uploaded file to the temporary file.
+                        with open(temp.name, "wb") as temp_file:
+                            temp_file.write(audio_file.read())
+                    st.write("Done creating Temp file")
+                    #st.audio(temp.read())
                     # Getting the transcript using Whisper Model.
-                    transcript = transcribe_audio_file_wsp(audio_file.name)
+                    transcript = transcribe_audio_file_wsp(temp.name)
                     
                     st.write("done transcribing")
                 #Getting the sentiments from the LLM
