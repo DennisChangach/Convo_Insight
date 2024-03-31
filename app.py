@@ -109,11 +109,11 @@ def main():
                 #st.markdown(transcript)
                 st.markdown(sentiment)
             except Exception as e:
-                st.write(e)
+                st.error(f"An error occurred: {type(e).__name__}: {str(e)}")
 
     #if user hasn't uploaded audio file
     elif transcribe and audio_file is None:
-        st.code("Please upload an audio file first!")
+        st.error("Please upload an audio file first!")
 
 
 
