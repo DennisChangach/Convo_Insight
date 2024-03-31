@@ -41,9 +41,9 @@ gemini_llm = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.3)
 
 #Loading openai models
 OPENAI_API_KEY= os.getenv("OPENAI_API_KEY")
-gpt3_5_llm = ChatOpenAI(temperature=0.3, openai_api_key= OPENAI_API_KEY,model_name = "gpt-3.5-turbo-0125")
+gpt3_5_llm = ChatOpenAI(temperature=0, openai_api_key= OPENAI_API_KEY,model_name = "gpt-3.5-turbo-0125")
 #gpt 4
-gpt4_llm = ChatOpenAI(temperature=0.3, openai_api_key= OPENAI_API_KEY,model_name = "gpt-4")
+gpt4_llm = ChatOpenAI(temperature=0, openai_api_key= OPENAI_API_KEY,model_name = "gpt-4")
 
 #Configuring Langsmith
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
