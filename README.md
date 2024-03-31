@@ -11,6 +11,9 @@ Convo Insights is a Streamlit-based web application that leverages cutting-edge 
 - Sentiment analysis using LLM models.
 - Simple and intuitive user interface powered by Streamlit.
 
+<img width="940" alt="image" src="https://github.com/DennisChangach/Convo_Insight/assets/41690660/aef1c73a-3b63-4dac-9684-54c5c960b86b">
+
+
 Here's the link to the app on Streamlit Cloud:https://convoinsight.streamlit.app
 
 ## Challenges Faced
