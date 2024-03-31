@@ -1,20 +1,18 @@
 #importing the necessary dependencies:
 import streamlit as st
 from dotenv import load_dotenv
-#from datetime import datetime
 import google.generativeai as genai
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import OpenAI
+from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
-from prompts import prompt_0,prompt_1
+from prompts import prompt_0,gd_prompt_0,prompt_1
 import os
 import requests
 import httpx
 import whisper
-#import whisperx
-#import torchaudio
 import torch
-#import tempfile
 from tempfile import NamedTemporaryFile
 
 #import logging, verboselogs
@@ -35,21 +33,23 @@ DEEPGRAM_API_KEY = os.getenv("DEEPGRAM_API_KEY")
 #iCreating a deepgram client
 deepgram: DeepgramClient = DeepgramClient(DEEPGRAM_API_KEY)
 
-# Load the Whisper model
 # Checking if NVIDIA GPU is available
 torch.cuda.is_available()
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
-# Configure the API key
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-
-
-#Configuring Langsmith
-#os.environ["LANGCHAIN_TRACING_V2"] = "true"
-#os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 
 # Load the LLM - Gemini Pro
-llm = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.3)
+# Configure the API key
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+gemini_llm = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.3)
+
+#Loading openai
+OPENAI_API_KEY= os.getenv("OPENAI_API_KEY")
+openai_llm = ChatOpenAI(temperature=0.3, openai_api_key= OPENAI_API_KEY,model_name = "gpt-3.5-turbo-0125")
+
+#Configuring Langsmith
+os.environ["LANGCHAIN_TRACING_V2"] = "true"
+os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 
 #Initilializing the output parser
 #output_parser = StrOutputParser()
@@ -64,19 +64,30 @@ def main():
     #Uploading Audio Files
     with st.sidebar:
         st.title("🛠️ Configuration:⚙️")
-        #Activating Demo Data
+        #Uploading your audiofile
         st.text("Please upload your audio file: 🔊")
-        audio_file = st.file_uploader("Upload audio file")
+        audio_file = st.file_uploader("Upload audio file",type=["mp3","m4a","wav"])
+        #Give a listen to your uploaded file:
+        st.text("Listen to your uploaded audio: 🎧")
+        st.audio(audio_file)
+        
+        #selecting LLM to use
+        llm_type = st.selectbox(
+                            "Please select LLM",
+                            ('gpt-3.5-turbo','gemini-pro'),index=0)
         #Selecting Mode of transacription: Master or Grand Master: & Call the appropriate function for transacription
         mode = st.selectbox(
                             "Please select Mode",
                             ('Master','GrandMaster'),index=0)
         
+        if mode == 'GrandMaster':
+            st.write("Please upload files under 25MB in size to ensure optimal processing with our Whisper model.")
+        
         transcribe = st.button("Transcribe 📜")
-    
+        
     if audio_file and transcribe:
         with st.spinner("Transcribing..."):
-            # When the file is uploaded: Pass the buffered audio file object
+            # When the file is uploaded: Pass the UploadFile object
             try: 
                #Getting the transcription from the function
                 if mode == 'Master':
@@ -88,19 +99,22 @@ def main():
                         # Write the user's uploaded file to the temporary file.
                         with open(temp.name, "wb") as temp_file:
                             temp_file.write(audio_file.read())
-                    st.write("Done creating Temp file")
-                    #st.audio(temp.read())
                     # Getting the transcript using Whisper Model.
+                    st.write("🔊 Our current GrandMaster model doesn't support speaker diarization yet. Each transcription will be provided as a single, unified text. We appreciate your understanding and patience as we continue to improve our services! 🚀")
                     transcript = transcribe_audio_file_wsp(temp.name)
                     
-                    st.write("done transcribing")
                 #Getting the sentiments from the LLM
-                sentiment = generate_sentiment(transcript)   
+                sentiment = generate_sentiment(transcript,mode,llm_type)   
                 st.success("Done")
-                st.markdown(transcript)
+                #st.markdown(transcript)
                 st.markdown(sentiment)
             except Exception as e:
                 st.write(e)
+
+    #if user hasn't uploaded audio file
+    elif transcribe and audio_file is None:
+        st.code("Please upload an audio file first!")
+
 
 
 #Function to transcribe audio file
@@ -142,7 +156,7 @@ def transcribe_audio_file_wsp(audio_file):
     print("Model loaded...starting to transcribe now")
 
     # Transcribe the audio file with speaker diarization
-    #result = model.transcribe(audio_file, fp16=False,language="en", task="transcribe,diarize")
+    #result = model.transcribe(audio_file,language="en", task="transcribe,diarize")
     result = model.transcribe(audio_file,fp16=False)
     print("completed transcription..starting to print now")
 
@@ -153,8 +167,18 @@ def transcribe_audio_file_wsp(audio_file):
     return result["text"]
 
 #generating sentiment
-def generate_sentiment(transcript):
-    my_prompt = prompt_0
+def generate_sentiment(transcript,mode,llm_type):
+    #Selecting the prompt based on the transcription mode
+    if mode == 'Master':
+        my_prompt = prompt_0
+    elif mode == "GrandMaster":
+        my_prompt = gd_prompt_0
+
+    #selecting the LLM based on the LLM selected
+    if llm_type == "gpt-3.5-turbo":
+        llm = openai_llm
+    elif llm_type == "gemini-pro":
+        llm = gemini_llm
   
     #Defining the prompt template
     prompt = PromptTemplate(input_variables=['transcript'],template=my_prompt)
