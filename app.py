@@ -138,7 +138,7 @@ def transcribe_audio_file_wsp(audio_file):
 
     # Transcribe the audio file with speaker diarization
     #result = model.transcribe(audio_file, fp16=False,language="en", task="transcribe,diarize")
-    result = model.transcribe(audio_file)
+    result = model.transcribe(audio_file,fp16=False)
     print("completed transcription..starting to print now")
 
     # Print the transcription
