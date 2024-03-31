@@ -7,7 +7,7 @@ from langchain_openai import OpenAI
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
-from prompts import prompt_0,gd_prompt_0,prompt_1
+from prompts import prompt_0,gd_prompt_0,prompt_1,prompt_coe
 import os
 import httpx
 import whisper
@@ -162,7 +162,7 @@ def transcribe_audio_file_wsp(audio_file):
 def generate_sentiment(transcript,mode,llm_type):
     #Selecting the prompt based on the transcription mode
     if mode == 'Master':
-        my_prompt = prompt_0
+        my_prompt = prompt_coe
     elif mode == "GrandMaster":
         my_prompt = gd_prompt_0
 
