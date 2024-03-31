@@ -39,9 +39,11 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 gemini_llm = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.3)
 
-#Loading openai
+#Loading openai models
 OPENAI_API_KEY= os.getenv("OPENAI_API_KEY")
-openai_llm = ChatOpenAI(temperature=0.3, openai_api_key= OPENAI_API_KEY,model_name = "gpt-3.5-turbo-0125")
+gpt3_5_llm = ChatOpenAI(temperature=0.3, openai_api_key= OPENAI_API_KEY,model_name = "gpt-3.5-turbo-0125")
+#gpt 4
+gpt4_llm = ChatOpenAI(temperature=0.3, openai_api_key= OPENAI_API_KEY,model_name = "gpt-4")
 
 #Configuring Langsmith
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
@@ -70,7 +72,7 @@ def main():
         #selecting LLM to use
         llm_type = st.selectbox(
                             "Please select LLM",
-                            ('gpt-3.5-turbo','gemini-pro'),index=0)
+                            ('gpt-3.5-turbo','gpt-4','gemini-pro'),index=0)
         #Selecting Mode of transacription: Master or Grand Master: & Call the appropriate function for transacription
         mode = st.selectbox(
                             "Please select Mode",
@@ -168,7 +170,9 @@ def generate_sentiment(transcript,mode,llm_type):
 
     #selecting the LLM based on the LLM selected
     if llm_type == "gpt-3.5-turbo":
-        llm = openai_llm
+        llm = gpt3_5_llm
+    elif llm_type == 'gpt-4':
+        llm = gpt4_llm
     elif llm_type == "gemini-pro":
         llm = gemini_llm
   
