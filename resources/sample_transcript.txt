@@ -1,0 +1,305 @@
+Speaker 0: They will take something, you know, anonymous art, 42¢ as, like, gospel. Yeah. And based their entire life philosophy, around it.
+
+Speaker 1: Yes. Yes.
+
+Speaker 0: Don't do that.
+
+Speaker 1: Don't do that. Alright. Welcome with Dalton plus Michael. And today, we're gonna talk about how fast is too fast for moving a startup. I'll start with the story.
+
+I was talking to a YC company. Could have been this batch. Could have been a previous batch. Yeah.
+
+Speaker 0: Let's anonymize it. We don't wanna
+
+Speaker 1: Probably every batch, to be honest. Common story. And a summary of what they told me was, you know, we got into YC with this idea. We called 25 companies, mostly startups, of course, over the last 2 weeks, none of them want to buy our product, which doesn't exist. It's just an idea.
+
+And so we decide to pivot. And so can you help us? And People may not know why we think that's funny.
+
+Speaker 0: Okay. Please explain it. This is funny to us. Because that's was very low effort. Yes.
+
+Trying to contact 25 people and be like, well, I guess they I guess we're done. I guess no one wants it.
+
+Speaker 1: Let's
+
+Speaker 0: see. So low effort Yes. As to be funny to us. So so carry on with the story.
+
+Speaker 1: What was interesting to me about this was that, like, these 2 founders had a vision in their head. And the second that the path and the startup didn't line this vision in their head, which was that, well, I think this idea sounds good. Well, I see fun of this idea. So they were everyone I talked to. Must think this idea is good.
+
+They got a little freaked out. But then the second thing that I love is that, like, the instinct to talk to startup founders It was like, I wanna vet this with startup people often because I feel like it's easier to sell them. Even though this isn't a problem, the startups, yeah, have. The overarching thing was, like, this was not even rigorous thinking. Like, no.
+
+Like, were these people used to work if someone they hired said this to them, they would, like, laugh at them. Yes. They're doing it themselves. Yeah. Why did they do this?
+
+Speaker 0: Also, the version of this, I see a lot. Yeah. Is people the way they start with their company is to cold email a bunch of people on LinkedIn. They're like, okay. We're doing our startup.
+
+We're going full time. Well, so cool. Well, what are you doing? Well, we we we LinkedIn in in mail that we spammed a thousand people. And we only got 3 responses.
+
+So I guess no one wants this. Yes. And that doesn't work, friends. Like, that's not sufficient. No.
+
+This is very superficial validation
+
+Speaker 1: Yeah.
+
+Speaker 0: That people are doing. Right? Like, And so I think people do this because no one told them differently. Here actually, here's an overview on this topic. Yeah.
+
+I think that a lot of people are trained as PMs and they're trained to do user research.
+
+Speaker 1: Yes.
+
+Speaker 0: And being trained to do user research, I remember taking a user research course in college. Yes. Is your you're trained to sort of, like, interview people rather than sell products to them. Yep. And if you can't even interview people You're not really sure what to do.
+
+No. And so I think my argument is if you've been trained to be a PM or trained to user interview research, you struggle with getting 1st customers because the skills that you learned to do this research don't
+
+Speaker 1: Don't apply. I also think that if you come for a big company, either in product or engineering, more often than not, you've never solved your own problem. Like, you're working on other people's problems. And so I think that your instinct when you start a company is, like, almost a consulting and say, I need to go around I had to talk to a lot of people. I'd figure out what their problem is, and I have to solve it, which I think is, tricky because it resembles what you did in Bigco.
+
+But it probably doesn't represent what the founder of your big co did
+
+Speaker 0: A 100%. To start their
+
+Speaker 1: big co. Right? It's like, who
+
+Speaker 0: did you copy? Like, yourself?
+
+Speaker 1: Employee 10,000, or what about employee 1? What what did that person do? So, you know, you talk a little bit about this concept of when people pivot quickly, it they they're not building a muscle of building conviction. Like, well, talk to us about that. You know, we have
+
+Speaker 0: a few different metaphors. I'll mix them one of the metaphors is what constitutes a high quality rep? Yes. What constitutes completing a full pivot cycle?
+
+Speaker 1: Yes.
+
+Speaker 0: And to learn anything, you need to complete it all the way. Yes. So, again, like, being like, we built a product We spammed ten people on LinkedIn. None of them replied. Let's throw it all in the trash.
+
+I am arguing that is not a high quality rep.
+
+Speaker 1: No. You didn't do anything.
+
+Speaker 0: You didn't really do anything. You didn't learn anything. It was sort of just like a waste of everyone's time.
+
+Speaker 2: You did you did spend time. So very happy. And so
+
+Speaker 0: Congrats. The the metaphor I sometimes like to tell people when they're pivoting is the most important customer is yourself And the founder psychology thing you wanna do is build conviction in your own mind that this thing is worth working on.
+
+Speaker 1: Yes.
+
+Speaker 0: And so it's not to make investors happy Yes. Or your YC partner happy Yes. Or whatever, it's to convince your brain that more time spent on this idea is time well spent.
+
+Speaker 1: Another way I like to think about that is to convince yourself this customer is worth helping. Yep. Like, you're gonna enjoy spending time with this customer. And I find a lot of founders kind of wanna skip that part. Convictionally.
+
+Yeah. Oh, I just wanna be in this industry. I just wanna I just wanna them to buy my thing. I don't want I don't, like, don't talk to me. I don't really care about it.
+
+Just buy my thing. Make my number go up. And I wanna raise my series a. It's like And and so
+
+Speaker 0: in terms of, like, founder personality traits or things you can develop, I think a lot of times how good of a programmer you are is one thing, how good you are at sales, how good you are at fundraising, all these things are, like, you know, important. Yes. But someone that has low conviction
+
+Speaker 1: Yeah.
+
+Speaker 0: And struggles to ever build a conviction on anything, even if they're great at all those other factors, not gonna make it. Isn't that crazy? Versus there's people that are worse at some of those other things. Imagine this this was like a baseball card of their skills. And not the best programmer, not the best salesperson enough, but this fundraiser but very high conviction and able to focus their energy one direction in a superhuman way.
+
+Those people tend to succeed.
+
+Speaker 1: Case in point, Justin Con. Like a vendor. I I totally agree. And what's funny is, like, every good startup team has at least one of those people.
+
+Speaker 0: You need 1?
+
+Speaker 1: Yes. Yes. You need that. And and the too cool for school teams where it's like, oh, no. Like, I can't I can't be too into anything.
+
+Right? Like, my bar is super high. It's like, sorry. He'll just you'll pivot to you right at speed.
+
+Speaker 0: Right. And and so, like, let's talk about exactly what conviction means. I think it doesn't mean believing in things religiously. Exactly. It's more of not letting yourself get blown off course.
+
+So this happens to us a lot. We've seen this at YC. A founder is working on an idea. They think it's going well. They go to fundraise.
+
+The fundraise is hard. What happens? If you're not high commission. Yep. Got a pivot.
+
+Got new and They give up. Yeah. So if just meeting with an investors Cause you to give up on your idea. By definition, I'm arguing you don't have high Yes. Because you're blown off course.
+
+If every time you talk to a new customer, you decide to change your product, That is low conviction. You do not have conviction.
+
+Speaker 1: Let's go back to the investor 1. The thing that I hate about that investor 1 is that if you look at the history of really big companies so many of them, most investors thought that the idea was horrible. Yes. So it's like empirically, a lot of investors thinking your idea is horrible. Is not necessarily a bad sign.
+
+Correct.
+
+Speaker 0: Yeah. It's not necessarily a good time either, brother.
+
+Speaker 1: No. No. No.
+
+Speaker 0: No. We're not arguing, hey. If it's bad, then it must be good. No. Not seeing that.
+
+Speaker 1: It's more of a neutral, like, it's it's it's it's not a key indicator
+
+Speaker 0: either way. I might argue.
+
+Speaker 1: But when you take it as a keyeter, when it's the only key indicator Yeah. Oh, it's so it's almost like
+
+Speaker 0: when you spend all your time trying to triangulate what other people say is good, and that's how you decide what sort of idea to work on. You're gonna have a bad time.
+
+Speaker 1: So I think that, I've been trying to unpack why do people do this. And and more specifically, like, why do people kind of think logically and rationally in their job and then come to their startup and just their quality of thinking decreases by 90%. And, you know, you and I talked about this before. You know, a big thing is fear. And in the context of the YC batch, I noticed a big thing specifically related to fear is
+
+Speaker 0: I literally like
+
+Speaker 1: fake information. You know, I had a company told me, like, oh, man, when we started looking at this problem and realized it's gonna take a little while to build. And, you know, we looked at our batch and 75% of the companies already have launched products that are growing. And we were like, we can't. And I'm like, wait.
+
+Speaker 0: Wait. Wait. Wait. Pause.
+
+Speaker 1: I was like, he said it with such conviction for a second. I was Wow. That's a
+
+Speaker 0: good job. We're we're we're we're killing 75% already launched. The batch isn't started yet.
+
+Speaker 1: And then I was like, wait. Like, why do you, like, why do you think that? And they were like, I just assumed.
+
+Speaker 0: I was like, will you just making shit up? Yeah. And I was like, you can look Well and this is what's funny for the founders that read a lot of Twitter or Reddit or blogs is they will take something, you know, anonymous aardvark 42 said as like gospel and based their entire life philosophy, around it.
+
+Speaker 1: Yes. Yes.
+
+Speaker 0: Don't do that.
+
+Speaker 2: Don't do that.
+
+Speaker 1: Especially when you could look up the real answer.
+
+Speaker 0: Like, you can tell which company. Like, when you're in the YC batch, you can tell
+
+Speaker 1: which companies are launched, which ones are. The other one was, well, an alum told me I won't be able to raise without, you know, $10,000 in MRR. And it was interesting. I had to sit down with this founder and say really simply, Some companies enter the batch with a post launch product with users. Some companies lend to the batch with an idea.
+
+If you were a rational investor, would you judge those 2 different companies with the same exact rubric? No. Of course not. And I was like, okay. And if an investor did, would you not call them kind of dumb?
+
+And maybe you wouldn't wanna work with them. I was like, Yeah. So then why are you doing that? Of course, the expectations are different from something that comes into the batch with just an idea. But I think that these kind of false expectations Yeah.
+
+Create the fear, and then the fear creates the bad thinking. And then it's like, once you're in bad thinking, you're you're kinda fucked.
+
+Speaker 0: I I love that technique, that you just mentioned. I like to do this one sometimes too when someone is trying to first customer Yeah. Which is like, okay. In your past job, your team evaluated different software to buy. Right?
+
+Yes. Yeah. And I'd be like, so you have actually been on the other side of the customer conversations a lot. Yeah. So which of the sales tactics that you're trying would have worked on you Like, what how often do you respond to cold emails on LinkedIn?
+
+Yes. Yeah. Oh, never. Okay.
+
+Speaker 1: With your name kind of poorly replaced in the template. Is that
+
+Speaker 0: Like, Gabe. And suddenly, their brain the gears in their brain reengaged. We're like, oh, we evaluated things all the time, and we would do this. And I had the, like, Like and I'd be like, so, basically, you're actually an expert at understanding your customer because you bought a lot of software on the other side of the table. Yes.
+
+What if you just tried to come up with with tactics that would have worked on you and would have made you buy your product. Yes. And they'll, like, stop and they'll be like, I never thought of that before. Yeah. And so that's actually a really great technique is to remember back when you've been on the buy side for stuff?
+
+Yes. And think about what have appealed to you, what would have appealed to you or got you over the line. Exactly. And then that screens out a lot of this junk because the low effort pivots If you run the style experiment, they be like, oh, yeah. I would never buy this.
+
+Yeah.
+
+Speaker 1: I think what's so funny is, like, when the founder has that realization Oh, I actually am an expert in this. Like, oh, I can actually lean them expertise. The thing I often say next is, like, and that's why we funded you. Look. Yeah.
+
+Like, it's like almost like they didn't realize that we funded them because they knew something about the topic they were pitching. And then when they want to pivot really clack, we're like, wow, now you're moving into an era, you know nothing about. And we have to, like, pay. Remember? Like,
+
+Speaker 0: how are you know? You know,
+
+Speaker 1: this thing?
+
+Speaker 0: You're like,
+
+Speaker 1: Others will respect that too, like with your customers. So, no, I think this is, it's so tricky because Fear really just fucks everything, but I do think this is one of the reasons why, I like the new YC standard deal. Because I think that before founders would be like, well, if I don't raise a dummy, I'm fucked. And now I can just say to them, it's like, look, Imagine over his undeminate. You have half a $1,000,000.
+
+You're fine. Like, there is no gun the only gun to your head is the one you're lifting.
+
+Speaker 0: That's what you're quoting over and over again, and you never build conviction. Like, when you're low conviction Yeah. Money ain't gonna No. Money's not your problem. So sometimes it's like,
+
+Speaker 1: hey, founders just put the gun down. Alright. So we often encounter these companies, and we've talked about this before. Companies that get into pivotitis. Right?
+
+Speaker 0: And you got a bad case.
+
+Speaker 1: Bad case of Pivuditis. Right? And I think what's interesting is that, like, a company that will build something, learn over a period of time, and then pivot will often pivot from a place of knowledge, and, like, actually continue to make forward progress, but we also see, a different version How how would you describe that version?
+
+Speaker 0: Yeah. Have you heard the term, random walk people? Like, so random walk is where you use, like, a random number generator to decide which direction you go? And basically, when you ran a walk, you actually never get anywhere. Like, imagine a starting point and then you walk one direction and you roll the dice and you choose a different direction, you do that over and over again.
+
+Yep. You never get anywhere.
+
+Speaker 1: That's kind of like emailing 25 startups and asking if they like your idea. A little bit.
+
+Speaker 0: It's a little random. Right?
+
+Speaker 1: Doing that again. And then doing that again. And then doing that again. Yeah.
+
+Speaker 0: And and what happens is imagine you're like, you know, in a row boat in the middle of the ocean trying to get back to land, If you just keep changing direction every every once in a while, you're never gonna get you're gonna be lost at sea. And so you kind of have to get on a vector that even if you have to change a little bit, yeah, there's some forward progress you're making in some specific direction.
+
+Speaker 1: And I think that what we see that's so unfortunate is that when you do that random walk enough, you just run out of energy. Yep. And, you know, I always see it. Like, somewhere in, like, one and a half to two years, if you don't feel like you've learned anything and you've spent 2 years kind of doing the thing. 1, your experience isn't gonna be good.
+
+No. 2, you won't feel like you used the time well, but 3, It's gonna be tired. And and for no good reason. You can be tired for no good reason.
+
+Speaker 0: And Well, you've never sunk your teeth in anything. So it's like your you feel like you've been running a race, but the if it's like so what have you learned? They're like, well, learn what not to do. Yeah. Like, it's harder.
+
+It's kind of hard to articulate why that was a good use of your time.
+
+Speaker 1: Yes. No. And I think that What's sad is that oftentimes those people have a very bad memory of startups. Right? Yeah.
+
+And, I wish they didn't. Like, the folks who learned and didn't succeed are often motivated to go out and do it again, or go work and come in that space. Like, this is an additive experience in their life, even if their shot didn't work. The ones here at the random walk like, they realized, man, this probably wasn't a good use of my time. So, anyways, I think that the last point I always like to bring up here is Another version of this kind of random walk or email 25 people then pivot is like launch a product that will help no one.
+
+Yep. And then pivot. And in the founder's mind, they'll say, well, I launched an MVP. And nobody wanted it. And, you know, we talked about this earlier.
+
+It's like, is it an MVP?
+
+Speaker 0: Yeah. MVP is one of those terms. Where we people say it so much. It's assumed that there's an agreed upon definition. Yeah.
+
+But when you ask for details, I am not convinced there's an agreed upon of MVP. So what's your definition of MVP?
+
+Speaker 1: Well, you know, I I think that I used to not assume I had to define it narrowly. But now that I think about it, if you can't get anyone to use your MVP, It's probably not an MVP.
+
+Speaker 0: Well, it's not the v. We're missing the v, which is viable. Yeah. Like, basically, if it doesn't work for anyone Yeah. How if it's hard to argue that is viable.
+
+Speaker 1: No. And, like, shouldn't an MVP it seems like the cool thing about an MVP is you can do things that don't scale and cheat. Like, you can make it you can kind of will it to work for one person. Right? So the fact that it doesn't work for one person usually means that, like, you weren't even trying to make it work for them.
+
+Like, you were trying to do something else.
+
+Speaker 0: This is a this is something that comes up a lot when I'm reading applications or in interviews. For specifically developer tools. You ready? Yes. Yeah.
+
+It'll be like, oh, cool. So I built this tool and it helps you code and you're way more efficient and it's better and it's You know, we're building our MVP and, like, we're get we're we're emailing people on LinkedIn now. Yeah. Yeah. Yeah.
+
+What is the question I asked them? Do do
+
+Speaker 1: you use it yourself? Yes.
+
+Speaker 0: I will say, great. So tell me about your usage of it. Yeah. And they'll be like, I'll be like, okay. So let me get this straight.
+
+This is helping programmers and you're outselling it. You're trying to get stone cold strangers to use it, but it's not good enough for you to use yet. Right? And then is that what you're saying? Usually, there's like, well,
+
+Speaker 1: it doesn't have. Like, they can list the thing where it doesn't have this, this,
+
+Speaker 0: and, I mean, like, I would never use it. And so the argument The earnest point is you should at least be able to use your own tool Yes. And be proud to use it or feel like it's providing some value Yes. The V and the V, it's viable for you. Yes.
+
+And if you can't even get your you can't bring yourself to use your own product, It's a little weird to be trying to sell it to people.
+
+Speaker 1: More than a little
+
+Speaker 0: more than a little later. So that should be the bar for a lot of folks.
+
+Speaker 1: Yes.
+
+Speaker 0: Is that they are willing to use their own product. Right?
+
+Speaker 1: That's a good bar for w, especially, I mean, if it's solving your own problem, then, like, at a minimum Yeah.
+
+Speaker 0: That doesn't apply. There's some that doesn't apply in some cases. But for a lot of things,
+
+Speaker 1: at a minimum, you should be able to use it. So, yeah, so once we started looking at it this way, I started realizing, like, how many companies never build an MVP because that that's like it's typically seen as kind of like the first real baby step. Right? And how many folks never Get there. They never made one customer happy.
+
+And sometimes when I talk to founders who have these big high food and plans, like, I bring it back to,
+
+Speaker 2: like, can we just one? We just go 1? You know, the path to 10,000,000 happy users.
+
+Speaker 0: Yeah. Let's talk about that later for tea. How about 1?
+
+Speaker 1: And, you know, you can't do that. Like, you can, you can Everyone can do that. Yeah. So maybe the long story short here is that, 1, it's gonna take maybe longer than you think. So don't have expectations that screw you up.
+
+2, fear makes you think real bad. Like, don't let fear turn a really smart person into a not very smart person. 3, man, it helps to solve your own problem. And then to be your first customer.
+
+Speaker 0: Yeah. That's a good bar. At least you could say you did that.
+
+Speaker 1: Yeah. If you're doing a random walk, maybe start. And then 4, like, understand that, like, you're gotta do you called it a good rep. May make the analogy because you in lifting, like, make the analogy.
+
+Speaker 0: Yeah. I think it would just be, In any kind of exercise or movement, if you wanna build strength, you wanna, like, have good form.
+
+Speaker 1: Yeah.
+
+Speaker 0: And you won't get better if you're form is bad, or you might even injure yourself, actually. Right? Like, if you wanna learn, I don't know, how to swing a golf club Yep. And your form is bad, a, you probably won't learn. Yep.
+
+And, b, you might injure yourself.
+
+Speaker 1: Yeah. And you're not gonna have fun.
+
+Speaker 0: And so you kinda wanna have good warm Yeah. When you're trying to do something that's hard.
+
+Speaker 1: We're in a good rep. I like it. Alright, man. A great shot. Cool.
+
+Thanks, man.
