@@ -9,17 +9,10 @@ from deepgram import (
     PrerecordedOptions,
     FileSource,
 )
-
 # Load environment variables
 load_dotenv()
 
-#Configuring Deepgram API
-DEEPGRAM_API_KEY = os.getenv("DEEPGRAM_API_KEY")
-
-#iCreating a deepgram client
-deepgram: DeepgramClient = DeepgramClient(DEEPGRAM_API_KEY)
-
-# Checking if NVIDIA GPU is available
+#Checking if NVIDIA GPU is available
 torch.cuda.is_available()
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -28,7 +21,16 @@ class Transcribe:
     def __init__(self,audio_file):
         self.audio_file = audio_file
     #Function to transcribe audio file
-    def transcribe_audio_file_dpg(self):
+    def transcribe_audio_file_dpg(self,DEEPGRAM_API_KEY):
+        if DEEPGRAM_API_KEY is not None:
+            #Configuring Deepgram API
+            deepgram: DeepgramClient = DeepgramClient(DEEPGRAM_API_KEY)
+
+        else:
+            DEEPGRAM_API_KEY = os.getenv("DEEPGRAM_API_KEY")
+            #iCreating a deepgram client
+            deepgram: DeepgramClient = DeepgramClient(DEEPGRAM_API_KEY)
+        
         #buffer data: audio_file onkect
         buffer_data = self.audio_file
         

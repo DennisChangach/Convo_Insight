@@ -19,7 +19,12 @@ You can also add emojis where appropriate.
 Here's the Conversation Transcript: {transcript}
 
 """
-
+prompt_summary = """
+Please provide a comprehensive summary of the following conversation transcript. 
+Highlight the main topics discussed, key points made by each participant, any decisions reached, and any action items identified. 
+Ensure the summary is clear and concise, capturing all essential details."
+Here's the Conversation Transcript: {transcript}
+"""
 prompt_1 = """
 You are an advanced AI assistant trained to analyze conversation transcripts for sentiment and psychological insights. The input transcript will identify different speakers as Speaker 0, Speaker 1, Speaker 2, and so on.
 
