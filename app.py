@@ -67,8 +67,9 @@ def main():
                     transcript = transcribe.transcribe_audio_file_wsp()     
             except Exception as e:
                 #Error handling
-                st.error(e)
+                #st.error(e)
                 st.error(f"An error occurred: {type(e).__name__}: {str(e)}")
+                exit()
         #Summarization
         with st.spinner("Generating Transcript Summary..."):
             try:
@@ -79,6 +80,7 @@ def main():
                 #Error handling
                 #st.error(e)
                 st.error(f"An error occurred: {type(e).__name__}: {str(e)}")
+                exit()
       
         with st.spinner("Generating Insights..."):
             try:
@@ -90,6 +92,7 @@ def main():
                 #Error handling
                 #st.error(e)
                 st.error(f"An error occurred: {type(e).__name__}: {str(e)}")
+                exit()
 
         tab1,tab2,tab3 = st.tabs(['Transcript','Summarization','Conversation Insights'])
         with tab1:
@@ -103,7 +106,6 @@ def main():
     #if user hasn't uploaded audio file
     elif transcribe and audio_file is None:
         st.error("Please upload an audio file first!")
-
 
 
 if __name__ == "__main__":

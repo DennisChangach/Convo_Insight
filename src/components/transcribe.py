@@ -3,6 +3,7 @@ import httpx
 import whisper
 import torch
 from dotenv import load_dotenv
+import streamlit as st
 from deepgram import (
     DeepgramClient,
     DeepgramClientOptions,
@@ -22,15 +23,23 @@ class Transcribe:
         self.audio_file = audio_file
     #Function to transcribe audio file
     def transcribe_audio_file_dpg(self,DEEPGRAM_API_KEY):
-        if DEEPGRAM_API_KEY is not None:
-            #Configuring Deepgram API
-            deepgram: DeepgramClient = DeepgramClient(DEEPGRAM_API_KEY)
-
-        else:
-            DEEPGRAM_API_KEY = os.getenv("DEEPGRAM_API_KEY")
+        try:
+            if DEEPGRAM_API_KEY is not None:
+                # Configuring user's Deepgram API KEY
+                api_key = DEEPGRAM_API_KEY
+            else:
+                api_key = os.getenv("DEEPGRAM_API_KEY")
+            
+            if not api_key:
+                st.error("No API key provided. Please provide a valid Deepgram API key.")
+                exit()
+            
             #iCreating a deepgram client
             deepgram: DeepgramClient = DeepgramClient(DEEPGRAM_API_KEY)
-        
+        except Exception as e:
+            st.error("Please ensure you have provide the correct API key")
+            exit()
+            
         #buffer data: audio_file onkect
         buffer_data = self.audio_file
         
@@ -56,7 +65,7 @@ class Transcribe:
 
         #print(file_response)
 
-        #gFormatting to get the output
+        #Formatting to get the output
         return file_response['results']['channels'][0]['alternatives'][0]['paragraphs']['transcript']
 
     #Function to generate transcript using Whisper X
